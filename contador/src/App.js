@@ -2,7 +2,8 @@ import './App.css'
 
 import React from 'react'
 
-import ContadorCompleto from './components/ContadorCompleto';
+import Contador from './components/Contador.jsx'
+
 import Card from './components/layout/Card';
 
 export default () => (
@@ -12,8 +13,8 @@ export default () => (
 
   <div className="Cards">
 
-    <Card titulo="Contador em um componente único" color="#02044f">
-      <ContadorCompleto numeroInicial= {10} />
+    <Card titulo="Contador componentizado" color="#0d3024">
+      <Contador numeroInicial= {10} />
     </Card>
   </div>
 

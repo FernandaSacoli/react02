@@ -1,9 +1,6 @@
 import './ContadorCompleto.css'
-
 import React, { Component } from 'react'
-
 class Contador extends Component {
-    
     state = {
         numero: this.props.numeroInicial || 0,
         passo: this.props.passo || 5,
@@ -23,17 +20,13 @@ class Contador extends Component {
     }
      setPasso= (event) => {
          this.setState({
-             // o parametro event é o evento da tag
-             // osinal de + converte o value (que por padrão e string) para number
              passo: event.target.value
          })
      }
-
      render (){
          return(
              <div className="Contador">
                  <h2> {this.state.numero} </h2>
-             
         <div>
              <label htmlFor="passoInput">Passo: </label>
             <input
