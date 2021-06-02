@@ -2,7 +2,7 @@ import './App.css'
 
 import React from 'react'
 
-import ContadorCompleto from './components/ContadorCompleto'
+import ContadorCompleto from './components/ContadorCompleto';
 import Card from './components/layout/Card';
 
 export default () => (
